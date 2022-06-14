@@ -39,7 +39,7 @@ section {
     flex-wrap: wrap;
 }
 .card {
-    flex: 1 1 300px;
+    flex: 1 1 320px;
     border: 2px dashed #fff;
     color: rgb(142, 221, 248);
     padding: 0 15px 15px;
