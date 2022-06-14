@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:darkgrey;
+}
+
+header {
+    width: 100%;
+    max-width: 880px;
+    padding: 0 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    padding: 35px 0px 20px;
+    color: rgb(157, 223, 245);
+    font-size: 250%;
+}
+
+.pageinfo {
+    color: white;
+    margin-bottom: 30px;
+}
+
+main {
+    display: block;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 300px;
+    border: 2px dashed #fff;
+    color: rgb(142, 221, 248);
+    padding: 0 15px 15px;
+    margin: 0 20px 40px;
+}
+
+.card .title {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.card:hover, .card .title {
+    box-shadow: inset 0px 0px 8px
+    lightblue, 0 0 15px
+    blue;
+}
+
+.title {
+    font-size: 150%;
+    width: 90%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    top: -20px;
+    background-color: darkgray;
+    margin: auto;
+    padding: 5px;
+}
+
+.explanation {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.card pre {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgb(92, 185, 215), rgb(5, 5, 231));
+    font-size: 100%;
+    white-space: pre-wrap;
+    user-select: all;
+}
+
+.end {
+    text-align: center;
+    font-size: 210%;
+    color: rgb(142, 221, 248);
+}
+
+/* Credit for heart goes to https://css-tricks.com/hearts-in-html-and-css/ */
+.heart {
+    background-color: red;
+    display: inline-block;
+    height: 25px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 25px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 25px;
+    position: absolute;
+    width: 25px;
+  }
+  
+  .heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+  }
