@@ -38,8 +38,11 @@ section {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .card {
     flex: 1 1 31%;
+    display: flex;
+    flex-direction: column;
     border: 2px dashed #fff;
     color: blue;
     padding: 0 15px 15px;
@@ -59,10 +62,9 @@ section {
 }
 
 .title {
-    font-size: 150%;
+    font-size: 203%;
     width: 90%;
     border: 2px solid #fff;
-    border-radius: 5px;
     position: relative;
     top: -20px;
     background-color: darkgray;
@@ -79,8 +81,9 @@ section {
     margin-inline-end: 0px;
 }
 
-.card pre {
+.code {
     color: #fff;
+    flex-grow: 1;
     border-radius: 5px;
     padding: 10px;
     background: linear-gradient(180deg, rgb(92, 185, 215), rgb(5, 5, 231));
