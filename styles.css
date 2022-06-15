@@ -72,6 +72,7 @@ section {
 
 .explanation {
     display: block;
+    font-size: 120%;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -84,7 +85,6 @@ section {
     padding: 10px;
     background: linear-gradient(180deg, rgb(92, 185, 215), rgb(5, 5, 231));
     font-size: 100%;
-    white-space: pre-wrap;
     user-select: all;
 }
 
