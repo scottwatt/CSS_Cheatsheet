@@ -37,8 +37,6 @@ section {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 .card {
     flex: 1 1 31%;
