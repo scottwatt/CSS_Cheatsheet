@@ -19,7 +19,7 @@ header {
 
 .header {
     padding: 35px 0px 20px;
-    color: rgb(157, 223, 245);
+    color: blue;
     font-size: 250%;
 }
 
@@ -38,12 +38,17 @@ section {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .card {
+<<<<<<< HEAD
     flex: 1 1 320px;
+=======
+    flex: 1 1 31%;
+>>>>>>> 57b1f431e400bb1bda0e5f170071b8fef0811a34
     display: flex;
     flex-direction: column;
     border: 2px dashed #fff;
-    color: rgb(142, 221, 248);
+    color: blue;
     padding: 0 15px 15px;
     margin: 0 20px 40px;
     
@@ -62,10 +67,9 @@ section {
 }
 
 .title {
-    font-size: 150%;
+    font-size: 203%;
     width: 90%;
     border: 2px solid #fff;
-    border-radius: 5px;
     position: relative;
     top: -20px;
     background-color: darkgray;
@@ -75,17 +79,24 @@ section {
 
 .explanation {
     display: block;
+    font-size: 120%;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
-.card pre {
+.code {
     color: #fff;
+<<<<<<< HEAD
     flex-grow: 1;
     display: flex;
     align-items: center;
+=======
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+>>>>>>> 57b1f431e400bb1bda0e5f170071b8fef0811a34
     border-radius: 5px;
     padding: 10px;
     background: linear-gradient(180deg, rgb(92, 185, 215), rgb(5, 5, 231));
@@ -96,7 +107,7 @@ section {
 .end {
     text-align: center;
     font-size: 210%;
-    color: rgb(142, 221, 248);
+    color: blue;
 }
 
 /* Credit for heart goes to https://css-tricks.com/hearts-in-html-and-css/ */
@@ -132,6 +143,7 @@ section {
   }
 
   @media screen and (max-width: 1000px) {
+<<<<<<< HEAD
       section {
           display: grid;
           width: 100%;
@@ -141,9 +153,22 @@ section {
   }
 
   @media screen and (max-width: 700px) {
+=======
+    section {
+        display:grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 700px){
+>>>>>>> 57b1f431e400bb1bda0e5f170071b8fef0811a34
     section {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
+<<<<<<< HEAD
     }    
+=======
+    }
+>>>>>>> 57b1f431e400bb1bda0e5f170071b8fef0811a34
   }
