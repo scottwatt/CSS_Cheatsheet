@@ -34,16 +34,19 @@ main {
 
 
 section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
 }
 .card {
     flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
     border: 2px dashed #fff;
     color: rgb(142, 221, 248);
     padding: 0 15px 15px;
     margin: 0 20px 40px;
+    
 }
 
 .card .title {
@@ -80,11 +83,13 @@ section {
 
 .card pre {
     color: #fff;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
     border-radius: 5px;
     padding: 10px;
     background: linear-gradient(180deg, rgb(92, 185, 215), rgb(5, 5, 231));
     font-size: 100%;
-    white-space: pre-wrap;
     user-select: all;
 }
 
@@ -124,4 +129,21 @@ section {
   .heart:after {
     left: 15px;
     top: 0;
+  }
+
+  @media screen and (max-width: 1000px) {
+      section {
+          display: grid;
+          width: 100%;
+          grid-template-columns: repeat(2, 1fr);
+      }
+      
+  }
+
+  @media screen and (max-width: 700px) {
+    section {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }    
   }
